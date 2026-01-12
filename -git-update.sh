@@ -5,38 +5,38 @@
 
 # Option: Commit with a message and push to the default branch ('main').
 # This is the most basic usage of the script.
-./-git-update.sh -m "Add documentation for the new API endpoint"
-./-git-update.sh -m "20260112 Update!"
+bash ./-git-update.sh -m "Add documentation for the new API endpoint"
+bash ./-git-update.sh -m "20260112 Update!"
 
 # ---
 
 # Option: Commit and push to a specific branch.
 # Useful for working on feature or hotfix branches.
-./-git-update.sh -m "Implement new user profile page" -b feature/user-profile
+bash ./-git-update.sh -m "Implement new user profile page" -b feature/user-profile
 
 # ---
 
 # Option: Commit locally but do NOT push to the remote server.
 # Ideal for saving work-in-progress that isn't ready to be shared.
-./-git-update.sh -m "WIP: Still refactoring the settings module" --no-push
+bash ./-git-update.sh -m "WIP: Still refactoring the settings module" --no-push
 
 # ---
 
 # Option: Have the script ask for confirmation before acting.
 # A safety measure to prevent accidental commits or pushes.
-./-git-update.sh -m "Final changes before v2.0 release" --ask
+bash ./-git-update.sh -m "Final changes before v2.0 release" --ask
 
 # ---
 
 # Option: Combine multiple arguments.
 # Example: Commit to a specific 'hotfix' branch, but ask for confirmation first.
-./-git-update.sh -m "CRITICAL: Fix login security vulnerability" -b hotfix/login-exploit --ask
+bash ./-git-update.sh -m "CRITICAL: Fix login security vulnerability" -b hotfix/login-exploit --ask
 
 # ---
 
 # Option: Combine arguments in a different order.
 # The order of optional flags does not matter.
-./-git-update.sh -m "Update styling on homepage" --ask -b main
+bash ./-git-update.sh -m "Update styling on homepage" --ask -b main
 
 END_OF_EXAMPLES
 # The comment block ends here. The script continues normally.

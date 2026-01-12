@@ -3,7 +3,7 @@
 # --- USAGE EXAMPLES ---
 : <<'END_OF_EXAMPLES'
 
-# Option: Commit with a message and push to the default branch ('main').
+# Option: Commit with a message and push to the default branch ('main').bash 
 # This is the most basic usage of the script.
 bash ./-git-update.sh -m "Add documentation for the new API endpoint"
 bash ./-git-update.sh -m "20260112 Update!"
